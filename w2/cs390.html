@@ -1,0 +1,327 @@
+<html>
+<head>
+<title>CS 390 Assignment 1</title>
+<script language="javascript" type="text/javascript" src="Demo.js"></script>
+<style type="text/css">
+body{
+    background-color:cornflowerblue;
+}
+#lblOp1{
+    position:absolute;
+    left:50px;
+    top:70px;
+    width:100px;
+    height:30px;
+}
+#txtOp1{
+    position:absolute;
+    left:160px;
+    top:70px;
+    width:190px;
+    height:30px;
+    font-family:sans-serif;
+    font-size:20px;
+    border-radius:15px;
+}
+#lblOp2{
+    position:absolute;
+    left:360px;
+    top:70px;
+    width:100px;
+    height:30px;
+}
+#txtOp2{
+    position:absolute;
+    left:510px;
+    top:70px;
+    width:150px;
+    height:30px;
+    font-family:sans-serif;
+    font-size:20px;
+    border-radius:15px;
+}
+#lblOp3{
+    position:absolute;
+    left:50px;
+    top:110px;
+    width:100px;
+    height:30px;
+
+}
+#txtOp3{
+    position:absolute;
+    left:160px;
+    top:110px;
+    width:190px;
+    height:30px;
+    font-family:sans-serif;
+    font-size:20px;
+    border-radius:15px;
+}
+#txtOp4{
+    position:absolute;
+    left:360px;
+    top:110px;
+    width:30px;
+    height:30px;
+    font-family:sans-serif;
+    font-size:20px;
+    border-radius:25px;
+    
+  
+}
+#lblOp4{
+    position:absolute;
+    left:400px;
+    top:120px;
+    width:150px;
+    height:30px;
+    font-weight: bold; 
+}
+
+#lblOp5{
+    position:absolute;
+    left:50px;
+    top:150px;
+    width:150px;
+    height:30px;
+
+}
+#txt_comments{
+    position:absolute;
+    left:50px;
+    top:180px;
+    width:550px;
+    height:80px;
+    font-family:sans-serif;
+    font-size:20px;
+    border-radius:15px;
+   
+}
+#btnAdd1{
+
+    position:absolute;
+    left:650px;
+    top:230px;
+    width:100px;
+    height:30px;
+    color:beige;
+    background-color:cornflowerblue;
+    border-radius:15px;
+}
+.bordered {
+    width: 700px;
+    height: 250px;
+    padding: 20px;
+    border: 5px solid ;
+    font-size: 25px;
+    background-color:lightblue;
+    border-radius:10px;
+}
+
+.bordered2 {
+    position:absolute;
+    left:10px;
+    top:370px;
+    width: 700px;
+    height: 250px;
+    padding:20px;
+    border: 5px solid ;
+    font-size: 25px;
+    background-color:lightblue;
+    border-radius:10px;
+    
+}
+#lblOp6{
+    position:absolute;
+    left:20px;
+    top:330px;
+    width:200px;
+    height:30px;
+    font-size: 25px;
+}
+#lblOp7{
+    position:absolute;
+    left:450px;
+    top:340px;
+    width:150px;
+    height:30px;
+    font-weight: bold; 
+ 
+}
+.divTotal{
+    position:absolute;
+    left:600px;
+    top:340px;
+    width:100px;
+    height:30px;
+    color:indigo;
+    font-weight: bold; 
+}
+#divEmployeesHead{
+    position:absolute;
+    left:15px;
+    top:375px;
+    width: 740px;
+    height:30px;
+    border-bottom:solid 3px;
+    background-color:darkblue
+}
+#divEmployeesHeaderCol1{
+    position:absolute;
+    left:15px;
+    top:10px;
+    width:100px;
+    height:20px;
+    font-size: 15px;
+    font-weight: bold; 
+    text-align: left;
+    color:cornsilk
+}
+#divEmployeesHeaderCol2{
+    position:absolute;
+    left:110px;
+    top:10px;
+    width:50px;
+    height:30px;
+    font-size: 15px;
+    font-weight: bold; 
+    text-align: left;
+    color:cornsilk
+  
+}
+#divEmployeesHeaderCol3{
+    position:absolute;
+    left:190px;
+    top:10px;
+    width:100px;
+    height:30px;
+    font-size: 15px;
+    font-weight: bold; 
+    text-align: left; 
+    color:cornsilk  
+}
+
+#divEmployeesHeaderCol4{
+    position:absolute;
+    left:260px;
+    top:10px;
+    width:250px;
+    height:30px;
+    font-size: 15px;
+    font-weight: bold;
+    color:cornsilk      
+}
+#divEmployeesList{
+    position:absolute;
+    left:15px;
+    top:420px;
+    width: 700px;
+    height:240px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.divEmployeesRow{   
+    position:relative;
+    left:20px;
+    height:60px;    
+    width: 700px;
+}
+.divEmployeesRowCol1{   
+    left:20px;
+    width:80px;
+    font-family:sans-serif;
+    font-size:16px;
+    display:inline-block;
+    text-align: center;
+    border-bottom:solid 2px;
+    word-wrap: break-word;
+    text-align: left;
+}
+.divEmployeesRowCol2{
+    width:100px;
+    font-family:sans-serif;
+    font-size:16px;
+    display:inline-block;
+    text-align: center;
+    border-bottom:solid 2px;
+    word-wrap: break-word;
+     text-align: left;
+}   
+.divEmployeesRowCol3{
+        
+    width:70px;
+    font-family:sans-serif;
+    font-size:16px;
+    display:inline-block;
+    text-align: center;
+    border-bottom:solid 2px;
+    word-wrap: break-word;
+    text-align: left;
+}      
+.divEmployeesRowCol4{  
+
+    width:360px;
+    font-family:sans-serif;
+    font-size:16px;
+    display:inline-block;
+    word-wrap: break-word;
+    text-align: left;
+    border-bottom:solid 2px;
+
+}  
+.divEmployeesRowCol5{
+       
+    font-weight: bold; 
+    width:73px;
+    font-family:sans-serif;
+    font-size:16px;
+    color:brown;
+    display:inline-block;
+    text-align: center;
+    border-bottom:solid black 2px;
+     text-align: center;
+}
+       
+</style>
+</head>
+
+<body onload="body_onload()">
+    <div class="bordered">
+        Add New Entry
+    </div>
+    <div class="back">
+        <label id="lblOp1">Employee ID</label>
+        <input type="text" id="txtOp1" />
+
+        <label id="lblOp2">Hours Worked</label>
+        <input type="text" id="txtOp2" />
+
+        <label id="lblOp3">Date Worked</label>
+        <input type="date" id="txtOp3" />
+
+        <input type="checkbox" id="txtOp4" />
+        <label id="lblOp4">Billable?</label>
+
+        <label id="lblOp5">Description</label>
+        <textarea id="txt_comments" name="txt_comments" rows="10" cols="35"></textarea>
+
+        <input type="button" id="btnAdd1" value="Save" />
+    </div>
+<div class="bordered2">
+</div>
+<label id="lblOp6">Time Log Entries</label>      
+<label id="lblOp7">Total hours worked:</label>
+
+<div id="divEmployeesHead">
+<div id="divEmployeesHeaderCol1">Employee</div>
+<div id="divEmployeesHeaderCol2">Date</div>
+<div id="divEmployeesHeaderCol3">Hours</div>
+<div id="divEmployeesHeaderCol4">Description</div>
+</div>
+
+<div id="divEmployeesList"></div>
+   
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+﻿<html>
+<head>
+    <style>
+        #lblFilters{
+            position: absolute;
+            left: 40px;
+            top: 50px;
+            font-size:18px;
+            font-weight: bold; 
+        }
+        .normal{
+            position: absolute;
+            left: 50px;
+            top: 60px;
+            width:500px;
+            border:2px solid;
+            height:180px;
+
+
+        }
+        #lblDescriptionContains {
+            position: absolute;
+            left: 70px;
+            top: 100px;
+        }
+
+        #txtDescriptionContains {
+            position: absolute;
+            left:220px;
+            top: 100px;
+            width:190px;
+        }
+
+        #btnRefresh {
+            position: absolute;
+            left: 420px;
+            top: 100px;
+            width:100px;
+        }
+        #btnAddNew {
+            position: absolute;
+            left: 570px;
+            top: 100px;
+            width:100px;
+
+        }
+        #lblDateFrom {
+            position: absolute;
+            left: 70px;
+            top: 150px;
+        }
+
+        #txtDateFrom {
+            position: absolute;
+            left: 150px;
+            top: 150px;
+        }
+
+        #lblThrough {
+            position: absolute;
+            left: 300px;
+            top: 150px;
+        }
+
+        #txtThrough {
+            position: absolute;
+            left: 370px;
+            top: 150px;
+        }
+
+        #chkShowCurrent {
+            position: absolute;
+            left: 52px;
+            top: 200px;
+          
+        }
+
+        #lblShowCurrent {
+            position: absolute;
+            left: 90px;
+            top: 200px;
+        }
+
+
+        #lblTimeLogEntries {
+            position: absolute;
+            left: 50px;
+            top: 270px;
+        }
+
+        #lblTotalHoursWorked {
+            position: absolute;
+            left: 350px;
+            top: 270px;
+        }
+
+        .divFriendsHead {
+            position: absolute;
+            left: 50px;
+            top: 300px;
+        }
+
+        .divFriendsHeadColl1 {
+            position: absolute;
+            left: 0px;
+        }
+
+        .divFriendsHeadColl2 {
+            position: absolute;
+            left: 100px;
+        }
+
+        .divFriendsHeadColl3 {
+            position: absolute;
+            left: 200px;
+        }
+
+        .divFriendsHeadColl4 {
+            position: absolute;
+            left: 300px;
+        }
+
+        .divFriendsList {
+            position: absolute;
+            left: 50px;
+            top: 320px;
+            background-color: #D3D3D3;
+            overflow-y: scroll;
+            height: 100px;
+            width: 1000px;
+        }
+
+        .divFriendsRow {
+            position: relative;
+            width: 1000px;
+        }
+
+        .divFriendsColl1 {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .divFriendsColl2 {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .divFriendsColl3 {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .divFriendsColl4 {
+            display: inline-block;
+            width: 550px;
+        }
+
+        .btnDelete {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
+    <script language="javascript" text="text/javascript" src="Main.js"></script>
+	 <script language="javascript" text="text/javascript" src="Shared.js"></script>
+</head>
+<body onload="body_onload()">
+    <label id="lblFilters">Filters</label>
+    <p class="normal"></p>
+
+    <label id="lblDescriptionContains">Description contains:</label>
+    <input type="text" id="txtDescriptionContains" />
+    <input type="button" id="btnRefresh" value="Refresh" />
+    <input type="button" id="btnAddNew" value="Add New" />
+
+    <label id="lblDateFrom">Date from:</label>
+    <input type="date" id="txtDateFrom" />
+    <label id="lblThrough">through:</label>
+    <input type="date" id="txtThrough" />
+   
+    <input type="checkbox" id="chkShowCurrent" />
+    <label id="lblShowCurrent">Show current employee only</label>
+
+    <label id="lblTimeLogEntries">Time Log Entries</label>
+    <label id="lblTotalHoursWorked"></label>
+    <div class="divFriendsHead">
+        <div class="divFriendsHeadColl1">Name</div>
+        <div class="divFriendsHeadColl2">Date</div>
+        <div class="divFriendsHeadColl3">Hours</div>
+        <div class="divFriendsHeadColl4">Description</div>
+    </div>
+    <div class="divFriendsList" id="divFriendsList">
+    </div>
+</body>
+</html>

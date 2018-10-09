@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+
+<title>CS390 w8</title>
+<link rel="stylesheet" type="text/css" href="Vue.css">
+<script language="javascript" type="text/javascript" src="Vue.js"></script>
+<script src="https://vuejs.org/js/vue.js"></script>
+
+
+</head>
+
+<body onload="body_onload()">
+    
+
+    <div id="calculator">
+        <label id="lblCheckAmount">Check Amount</label>
+        <label id="lblSalesTaxPct">Sales Tax %</label>
+        <label id="lblTipPct">Tip %</label>
+        <label id="lblSalesTaxAmount">Sales Tax</label>
+        <label id="lblTipAmount">Tip Amount</label>
+
+        <input type="text" id="txtCheckAmount" v-model="op1"/>
+        <label id="lblOp1Message">{{ op1Message }}</label>
+
+        <input type="text" id="txtSalesTaxPct" v-model="op2" />
+        <label id="lblOp2Message">{{ op2Message }}</label>
+
+        <input type="text" id="txtTipPct" v-model="op3" />
+        <label id="lblOp3Message">{{ op3Message }}</label>
+
+        <input type="text" id="txtSalesTaxAmount" readonly="readonly" v-model="gSalesTaxAmount" />
+        <input type="text" id="txtTipAmount" readonly="readonly"  v-model="gTipAmount"/>
+
+
+
+        <div id="divtip">
+            <input type="radio" id="btnTipPreTax" value="TipPreTax" v-model="tip">
+            <label for="btnTipPreTax">Tip Pre Tax</label>
+            <input type="radio" id="btnTipOnTotal" value="TipOnTotal" v-model="tip">
+            <label for="btnTipOnTotal">Tip On Total</label>
+        </div>
+    </div>
+
+
+</body>
+</html>

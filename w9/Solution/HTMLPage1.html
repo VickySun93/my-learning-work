@@ -1,0 +1,119 @@
+﻿<html>
+<head>
+    <title>CS390</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+
+    <script src="https://vuejs.org/js/vue.js"></script>
+
+    <script language="javascript" type="text/javascript" src="Script1.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/x-template" id="friend-box-template">
+        <transition name="slide-fade5">
+            <div class="divFriendBox">
+
+
+                <transition name="slide-fade4">
+                    <div id="ConfirmationForm" v-show="showConfirmation">
+                        <label id="lblSignIn">Are you sure you want to delete this question?</label>
+
+                        <button id="btnYes" v-on:click="btnYes_click">Yes</button>
+                        <button id="btnNo" v-on:click="btnNo_click">No</button>
+                    </div>
+                </transition>
+
+
+                <label class="lblCategoryName">{{ category  }}</label>
+                <label class="lblDollarName">{{ dollar }}</label>
+                <label class="lblAirDateName">{{ airdate }}</label>
+                <label class="lblQuestionName"
+                       v-on:mouseover="showGender = true"
+                       v-on:mouseleave="showGender = false">{{ question }}</label>
+
+                <transition name="fade">
+                    <label class="lblFriendGender" v-show="showGender">{{ answer }}</label>
+                </transition>
+
+                <button type="button"  id="btnFriendDelete" class="btn btn-default" v-on:click="btnDelete_click">
+                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 
+                </button>
+            </div>
+        </transition>
+</script>
+</head>
+<body onload="body_onload()">
+
+    <div id="demoApp">
+
+        <transition name="slide-fade">
+            <div id="SignInForm" v-show="showSignIn">
+                <label id="lblSignIn">Jeopardy Question Sign In</label>
+                <label id="lblUserID">User ID:</label>
+                <label id="lblPassword">Password:</label>
+         
+                <input type="text" id="txtUserID" v-model="UserID" />
+                <input type="text" id="txtPassword" v-model="Password" />
+               
+                <button id="btnSignIn" v-on:click="btnSignIn_click">Sign In</button>
+            </div>
+        </transition>
+        <transition name="slide-fade2">
+            <div id="SearchForm" v-show="showSearch">
+                <label id="lblSearch">Jeopardy Question</label>
+                <label id="lblShow">Show questions containing:</label>
+                
+                <input type="text" id="txtSearchbox" v-model="Searchbox"  />
+
+
+                <button id="btnSearch" v-on:click="btnSearch_click">Search</button>
+                <button id="btnAddNew" v-on:click="btnAddNew_click">Add New</button>
+            </div>
+        </transition>
+        <transition name="slide-fade3">
+            <div id="AddNewForm" v-show="showAddNew">
+                <label id="lblAddNew">Add a New Question</label>
+                <label id="lblCategory">Category</label>
+                <label id="lblShowNumber">Show Number</label>
+                <label id="lblAirDate">Air Date</label>
+                <label id="lblDollarValue">Dollar Value</label>
+                <label id="lblQuestion">Question</label>
+                <label id="lblAnswer">Answer</label>
+ 
+               <select id="txtCategory" v-model="CodeTitle ">  </select>
+
+
+
+                <input type="text" id="txtShowNumbe" v-model="ShowNumber" />
+                <input type="date" id="txtAirDate" v-model="AirDate" />
+                <i id="calendar" class="glyphicon glyphicon-calendar"></i>
+                <input type="text" id="txtDollarValue" v-model="DollarValue" />
+              
+                <textarea id="txtQuestion" v-model="Question" ></textarea>
+                <input type="text" id="txtAnswer" v-model="Answer" />
+
+
+                <button id="btnAddNewSave" v-on:click="btnAddNewSave_click">Save</button>
+                <button id="btnAddNewCancel" v-on:click="btnAddNewCancel_click">Cancel</button>
+            </div>
+        </transition>
+
+
+        <transition name="slide-fade6">
+            <label id="lblOp1Message" v-show="showalert">{{ op1Message }}</label>
+        </transition>
+
+
+        <friend-box v-for="friend in friends"
+                    v-bind:key="friend.QuestionID"
+                    v-bind:category="friend.CategoryTitle"
+                    v-bind:dollar="friend.DollarValue"
+                    v-bind:airdate="friend.AirDate"
+                    v-bind:question="friend.QuestionText"
+                    v-bind:answer="friend.AnswerText"
+                    v-bind:id="friend.QuestionID">
+        </friend-box>
+
+
+    </div>
+</body>
+</html>

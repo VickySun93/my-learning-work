@@ -1,0 +1,626 @@
+﻿body {
+ background: #eeeeee;
+ font-family: Sans-Serif;
+}
+.divFriendBox {
+ position:relative;
+ border: 1px solid #cfc7c7;
+ background: #ffffff;
+ width: 1050px;
+ height: 200px;
+ margin:20px;
+ padding:10px;
+  z-index: 0;
+ box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ overflow-y:scroll;
+}
+#lblOp1Message{
+position:relative;
+ left: 10px;
+ width: 500px;
+ height: 30px;
+ color:red;
+}
+.lblCategoryName {
+ position:absolute;
+ left: 10px;
+ top: 10px;
+ font-family: Sans-Serif;
+ font-size: 19px;
+}
+
+.lblDollarName {
+ position:absolute;
+ left: 10px;
+ top: 40px;
+ font-family: Sans-Serif;
+ font-size: 20px;
+}
+.lblAirDateName {
+ position:absolute;
+ left: 10px;
+ top: 70px;
+ font-family: Sans-Serif;
+ font-size: 20px;
+}.lblQuestionName {
+ position:absolute;
+ left: 400px;
+ top: 10px;
+ width:530px;
+ font-family: Sans-Serif;
+ font-size: 20px;
+}
+.lblFriendGender {
+ position:absolute;
+ left: 170px;
+ top: 160px;
+ font-family: Sans-Serif;
+ font-size: 16px;
+ color: #006699;
+}
+#btnFriendDelete {
+ position:absolute;
+ left: 940px;
+ top: 14px;
+ width: 40px;
+ font-family: Sans-Serif;
+ font-size: 16px;
+}
+#btnShowNew {
+ left: 10px;
+ width: 150px;
+ height: 30px;
+ text-align: center;
+ font-size: 18px;
+}
+#divNewForm {
+ left: 10px;
+ width: 420px;
+ height: 160px;
+}
+#lblNewID {
+ position: absolute;
+ left: 0px;
+ top: 25px;
+ width: 150px;
+height: 30px;
+ text-align: right;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#lblNewName
+{position: absolute;
+ left: 0px;
+ top: 60px;
+ width: 150px;
+ height: 30px;
+ text-align: right;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#lblNewGender
+{
+ position: absolute;
+ left: 0px;
+ top: 95px;
+ width: 150px;
+ height: 30px;
+ text-align: right;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#txtNewID
+{
+ position: absolute;
+ left: 160px;
+ top: 20px;
+ width: 100px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#txtNewName
+{
+ position: absolute;
+ left: 160px;
+ top: 55px;
+ width: 200px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#txtNewGender
+{
+ position: absolute;
+ left: 160px;
+ top: 90px;
+ width: 200px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#btnSave
+{
+ position: absolute;
+ left: 160px;
+ top: 125px;
+ width: 150px;
+ height: 30px;
+ text-align: center;
+ font-size: 18px;
+}
+.fade-enter {
+ opacity: 0;
+}
+.fade-enter-to {
+ opacity: 1;
+}
+.fade-leave {
+ opacity: 1;
+}
+.fade-leave-to {
+ opacity: 0;
+}
+.fade-enter-active, .fade-leave-active {
+ transition: opacity 750ms;
+}
+
+
+.slide-fade-enter-active {
+  transition: all .8s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+ {transform: translateY(-20px);
+  opacity: 0;
+}
+.slide-fade-leave, .slide-fade-enter-to
+ {transform: translateY(20px);
+  opacity: 1;
+}
+
+
+.slide-fade2-enter-active {
+  transition: all .8s ease;
+}
+.slide-fade2-leave-active {
+  transition: all .8s ease;
+}
+.slide-fade2-enter, .slide-fade2-leave-to
+ {transform: translateY(10px);
+  opacity: 0;
+}
+.slide-fade2-leave, .slide-fade2-enter-to
+ {transform: translateY(10px);
+  opacity: 1;
+}
+
+.slide-fade3-enter-active {
+  transition: all .8s ease;
+}
+.slide-fade3-leave-active {
+  transition: all .8s ease;
+}
+.slide-fade3-enter, .slide-fade3-leave-to
+ {  transform: translateX(10px);
+  opacity: 0;
+}
+.slide-fade3-leave, .slide-fade3-enter-to
+ { transform: translateX(-10px);
+  opacity: 1;
+}
+
+.slide-fade4-enter-active {
+  transition: all .8s ease;
+}
+.slide-fade4-leave-active {
+  transition: all .8s ease;
+}
+.slide-fade4-enter, .slide-fade4-leave-to
+ {  transform: translateX(10px);
+  opacity: 0;
+}
+.slide-fade4-leave, .slide-fade4-enter-to
+ { transform: translateX(-10px);
+  opacity: 1;
+}
+
+
+
+
+.slide-fade5-enter-active {
+  transition: all .8s ease;
+}
+.slide-fade5-leave-active {
+  transition: all .8s ease;
+}
+.slide-fade5-enter, .slide-fade5-leave-to
+ {  transform: translateX(10px);
+  opacity: 0;
+}
+.slide-fade5-leave, .slide-fade5-enter-to
+ { transform: translateX(-10px);
+  opacity: 1;
+}
+
+
+.slide-fade6-enter-active {
+  transition: all .8s ease;
+}
+.slide-fade6-leave-active {
+  transition: all .8s ease;
+}
+.slide-fade6-enter, .slide-fade6-leave-to
+ {  transform: translateX(10px);
+  opacity: 0;
+}
+.slide-fade6-leave, .slide-fade6-enter-to
+ { transform: translateX(-10px);
+  opacity: 1;
+}
+
+
+
+
+
+#SignInForm {
+ left: 10px;
+ width: 420px;
+ height: 160px;
+}
+#lblSignIn {
+ position: absolute;
+ left: 0px;
+ top: 25px;
+ width: 400px;
+height: 30px;
+ text-align: right;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#lblUserID
+{position: absolute;
+ left: 0px;
+ top: 60px;
+ width: 150px;
+ height: 30px;
+ text-align: right;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#lblPassword
+{
+ position: absolute;
+ left: 0px;
+ top: 95px;
+ width: 150px;
+ height: 30px;
+ text-align: right;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+
+#txtUserID
+{
+ position: absolute;
+ left: 160px;
+ top: 55px;
+ width: 200px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#txtPassword
+{
+ position: absolute;
+ left: 160px;
+ top: 90px;
+ width: 200px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#btnSignIn
+{
+ position: absolute;
+ left: 160px;
+ top: 125px;
+ width: 150px;
+ height: 30px;
+ text-align: center;
+ font-size: 18px;
+}
+
+
+
+
+
+
+#SearchForm {
+ left: 10px;
+ width: 800px;
+ height: 160px;
+}
+#lblSearch {
+ position: absolute;
+ left: 0px;
+ top: 25px;
+ width: 400px;
+ height: 30px;
+ text-align: center;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#lblShow
+{position: absolute;
+ left: 0px;
+ top: 60px;
+ width: 250px;
+ height: 30px;
+ text-align: center;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+
+#txtSearchbox
+{
+ position: absolute;
+ left: 250px;
+ top: 60px;
+ width: 200px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+
+#btnSearch
+{
+ position: absolute;
+ left: 460px;
+ top: 60px;
+ width: 100px;
+ height: 30px;
+ text-align: center;
+ font-size: 18px;
+}
+#btnAddNew
+{
+ position: absolute;
+ left: 570px;
+ top: 60px;
+ width: 100px;
+ height: 30px;
+ text-align: center;
+ font-size: 18px;
+}
+
+
+
+
+
+
+
+
+#AddNewForm {
+
+ width: 800px;
+ height: 300px;
+ border: 1px solid #cfc7c7;
+ background: #ffffff;
+ margin:20px;
+ padding:10px;
+ box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#lblAddNew {
+ position: absolute;
+ left: 0px;
+ top: 25px;
+ width: 400px;
+ height: 30px;
+ text-align: center;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+
+#lblCategory
+{position: absolute;
+ left: 50px;
+ top: 60px;
+ width: 100px;
+ height: 30px;
+ text-align: center;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#txtCategory {
+ position: absolute;
+ left: 160px;
+ top: 60px;
+ width: 250px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#lblShowNumber
+{position: absolute;
+ left: 420px;
+ top: 60px;
+ width: 150px;
+ height: 30px;
+ text-align: center;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#txtShowNumbe {
+ position: absolute;
+ left: 580px;
+ top: 60px;
+ width: 100px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#btnAddNewSave
+{
+ position: absolute;
+ left: 690px;
+ top: 60px;
+ width: 70px;
+ height: 30px;
+ text-align: center;
+ font-size: 18px;
+}
+
+#lblAirDate
+{position: absolute;
+ left: 50px;
+ top: 100px;
+ width: 100px;
+ height: 30px;
+ text-align: center;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#txtAirDate {
+ position: absolute;
+ left: 160px;
+ top: 100px;
+ width: 160px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#calendar {
+ position: absolute;
+ left: 330px;
+ top: 110px;
+ font-size: 18px;
+}
+#lblDollarValue
+{position: absolute;
+ left: 370px;
+ top: 100px;
+ width: 150px;
+ height: 30px;
+ text-align: center;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+
+#txtDollarValue {
+ position: absolute;
+ left: 530px;
+ top: 100px;
+ width: 100px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+
+#btnAddNewCancel
+{
+ position: absolute;
+ left: 640px;
+ top: 100px;
+ width: 70px;
+ height: 30px;
+ text-align: center;
+ font-size: 18px;
+}
+#lblQuestion
+{position: absolute;
+ left: 50px;
+ top: 140px;
+ width: 100px;
+ height: 30px;
+ text-align: center;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#txtQuestion {
+ position: absolute;
+ left: 160px;
+ top: 140px;
+  width: 350px;
+ height: 90px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+
+
+#lblAnswer
+{position: absolute;
+ left: 50px;
+ top: 240px;
+ width: 100px;
+ height: 30px;
+ text-align: center;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#txtAnswer {
+ position: absolute;
+ left: 160px;
+ top: 240px;
+ width: 350px;
+ height: 30px;
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#ConfirmationForm {
+ position: absolute;
+ left: 100px;
+ top:0px;
+ width: 600px;
+ height: 50px;
+ z-index: 2;
+ background-color:#cfc7c7;
+}
+#lblSignIn {
+
+ position: absolute;
+ left: 10px;
+ top: 15px;
+ width: 400px;
+ height: 30px;
+ text-align: left;
+
+ font-family: Sans-Serif;
+ font-size: 18px;
+}
+#btnYes
+{
+ background-color:#3ab506;
+ position: absolute;
+ left: 420px;
+ top: 15px;
+ width: 80px;
+ height: 30px;
+ text-align: center;
+ font-size: 20px;
+}
+#btnNo
+{
+ background-color:#d84848;
+ position: absolute;
+ left: 510px;
+ top: 15px;
+ width: 80px;
+ height: 30px;
+ text-align: center;
+ font-size: 20px;
+}

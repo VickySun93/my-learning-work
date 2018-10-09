@@ -1,0 +1,131 @@
+ for (i = 0; i < gFriends.length; i++) {
+		var friend = gFriends[i];
+		var dworked = new Date(friend.DateWorked)
+		if(chkShowCurrent.value === true){
+			if(friend.EmployeeID === id){
+				if(txtDescriptionContains.value===""){
+					if(txtDateFrom.value ===undefined){
+						if(txtThrough.value===undefined){
+							gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);
+							
+						}else{
+							var dthrough = new Date(txtThrough.value);
+							
+							if(dworked<= dthrough){		
+								gFriends.splice(i, 1);
+								displayFriends(0, gFriends.length);
+							}
+							
+						}
+						
+					}else{
+						var dfrom = new Date(txtDateFrom.value);
+						if(txtThrough.value===undefined){
+							if(dfrom <= dworked){		
+							gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);}
+							
+						}else{
+							var dthrough = new Date(txtThrough.value);
+							
+							if(dworked<= dthrough && dworked >= dfrom){		
+							gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);}	
+						}	
+					}
+				}else{
+					if(friend.Description.includes(txtDescriptionContains.value)){
+						if(txtDateFrom.value ===undefined){
+							if(txtThrough.value===undefined){
+							divFriendsList.appendChild(row);
+							
+							}else{
+								var dthrough = new Date(txtThrough.value);
+							
+								if(dworked<= dthrough){		
+								gFriends.splice(i, 1);
+								displayFriends(0, gFriends.length);}
+							}
+						
+						}else{
+							var dfrom = new Date(txtDateFrom.value);
+							if(txtThrough.value===undefined){
+								if(dfrom <= dworked){		gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);}
+							
+							}else{
+								var dthrough = new Date(txtThrough.value);
+							
+								if(dworked<= dthrough && dworked >= dfrom){		gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);}
+							}
+						}
+					}
+	
+				}
+			}
+				
+		}else{
+			if(txtDescriptionContains.value===""){
+					if(txtDateFrom.value ===undefined){
+						if(txtThrough.value===undefined){
+							divFriendsList.appendChild(row);
+							
+						}else{
+							var dthrough = new Date(txtThrough.value);
+							
+							if(dworked<= dthrough){		gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);}
+							
+						}
+						
+					}else{
+						var dfrom = new Date(txtDateFrom.value);
+						if(txtThrough.value===undefined){
+							if(dfrom <= dworked){		gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);}
+							
+						}else{
+							var dthrough = new Date(txtThrough.value);
+							
+							if(dworked<= dthrough && dworked >= dfrom){		gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);}
+							
+						}	
+					}
+						
+		
+				}else{
+					if(friend.Description.includes(txtDescriptionContains.value)){
+						if(txtDateFrom.value ===undefined){
+							if(txtThrough.value===undefined){
+							divFriendsList.appendChild(row);
+							
+							}else{
+								var dthrough = new Date(txtThrough.value);
+							
+								if(dworked<= dthrough){		gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);}
+							}
+						
+						}else{
+							var dfrom = new Date(txtDateFrom.value);
+							if(txtThrough.value===undefined){
+								if(dfrom <= dworked){		gFriends.splice(i, 1);
+							displayFriends(0, gFriends.length);}
+							
+							}else{
+								var dthrough = new Date(txtThrough.value);
+							
+								if(dworked<= dthrough && dworked >= dfrom){		gFriends.splice(i, 1);
+								displayFriends(0, gFriends.length);}
+							}
+						}
+					}
+	
+				}
+			
+		}
+		
+	}

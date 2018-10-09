@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+    <style>
+       .normal{
+            position: absolute;
+            left: 400px;
+            top: 10px;
+            border:2px solid ;
+            width: 350px;
+            height:300px;
+            background-color:lightblue;
+        }
+        #lblTimeLogEntries {
+            position: absolute;
+            left: 420px;
+            top: 50px;
+        }
+
+        #lblEmployeeID {
+            position: absolute;
+            left: 470px;
+            top: 100px;
+        }
+
+        #txtEmployeeID {
+            position: absolute;
+            left: 570px;
+            top: 100px;
+        }
+
+        #lblPassword {
+            position: absolute;
+            left: 470px;
+            top: 150px;
+        }
+
+        #txtPassword {
+            position: absolute;
+            left: 570px;
+            top: 150px;
+        }
+        
+        #btnSignIn {
+            position: absolute;
+            left: 570px;
+            top: 200px;
+            width:100px;
+        }
+
+        #chkBillable {
+            position: absolute;
+            left:470px;
+            top:250px;
+        }
+
+        #lblBillable {
+            position: absolute;
+            left: 490px;
+            top: 250px;
+            
+        }
+      
+
+      
+
+    </style>
+    <script language="javascript" text="text/javascript" src="SignIn.js"></script>
+</head>
+<body onload="body_onload()">
+    <p class="normal"></p>
+    <label id="lblTimeLogEntries">Time Log Sign In</label>
+
+    <label id="lblEmployeeID">Employee ID:</label>
+    <input type="text" id="txtEmployeeID" />
+
+    <label id="lblPassword">Password:</label>
+    <input type="text" id="txtPassword" />
+
+    <input type="button" id="btnSignIn" value="Sign In" />
+
+    <input type="checkbox" id="chkBillable" />
+    <label id="lblBillable">Remember Employee ID</label>
+
+ 
+</body>
+</html>
